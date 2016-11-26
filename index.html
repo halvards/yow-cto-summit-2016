@@ -4,7 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<meta name="description" content="Slides for YOW! 2016 CTO Summit Sydney presentation">
+		<meta name="author" content="Halvard Skogsrud">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<title>YOW! 2016 CTO Summit Sydney - Halvard Skogsrud</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -20,6 +26,10 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<div class="reveal">
@@ -35,14 +45,35 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
+				// Display controls in the bottom right corner
+    		controls: false,
+
+    		// Display a presentation progress bar
+    		progress: true,
+
+				// Display the page number of the current slide
+    		slideNumber: true,
+
+				// Push each slide change to the browser history
+    		history: true,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+					// Interpret Markdown in <section> elements
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Syntax highlight for <code> elements
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+
+					// Speaker notes
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 		</script>
