@@ -2,6 +2,8 @@
 
 Slides for my [YOW! 2016 CTO Summit Sydney](http://sydneyctosummit.yowconference.com.au) talk, available at <https://halvards.github.io/yow-cto-summit-2016/>
 
+Bio and talk abstract available at <https://a.confui.com/-44olxR5E>
+
 Usage:
 
 * Press the `Space` key to navigate through all the slides
