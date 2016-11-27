@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<meta name="description" content="Slides for YOW! 2016 CTO Summit Sydney presentation">
+		<meta name="keywords" content="cloud,public cloud,myths,compliance,privacy,security,apra,app,privacy act,asd,aws,azure,gcp">
 		<meta name="author" content="Halvard Skogsrud">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<title>YOW! 2016 CTO Summit Sydney - Halvard Skogsrud</title>
+		<title>Cloud Compliance Myths - YOW! 2016 CTO Summit Sydney - Halvard Skogsrud</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -34,8 +35,154 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section>
+					<h2>Cloud Compliance Myths</h2>
+					<p>Halvard Skogsrud</p>
+					<p><a href="https://twitter.com/halvards">@halvards</a></p>
+					<small>
+						<p>YOW! 2016 CTO Summit Sydney</p>
+						<p>Wednesday 7 December 2016</p>
+					</small>
+				</section>
+
+				<section>
+					<h2>Introduction</h2>
+					<p></p>
+					<p></p>
+					<p></p>
+				</section>
+
+				<section>
+					<h2>Myth 1</h2>
+					<p>Business continuity</p>
+					<blockquote>&ldquo;APRA's prudential standards says we must be ready to redeploy applications in-house at any time in case of a significant disruption at the cloud provider.&rdquo;</blockquote>
+					<aside class="notes">
+						Implication: We must have full redundancy on internal hardware, which will be too expensive.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Source of myth 1</h2>
+					<p>APRA Prudential Standard CPS 231: Outsourcing</p>
+					<blockquote>&ldquo;An APRA-regulated institution must be able to demonstrate to APRA that [...] it has taken into account [...] contingency issues in accordance with <a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-232-Business-Continuity-Management-(July-2017).pdf">Prudential Standard CPS 232 Business Continuity Management</a> should the outsourced activity need to be brought in-house&rdquo;</blockquote>
+				</section>
+
+				<section>
+					<h2>Evidence against myth 1 [1]</h2>
+					<p>APRA Information Paper: Outsourcing involving shared computing services (including cloud)</p>
+					<blockquote>&ldquo;Additionally, under CPS 231 and SPS 231, APRA-regulated entities must develop contingency plans that allow for the shared computing service to be transitioned to an alternative service provider (or brought in-house), if required.&rdquo;</blockquote>
+				</section>
+
+				<section>
+					<h2>Evidence against myth 1 [2]</h2>
+					<p>No mention of &quot;in-house&quot; in CPS 232</p>
+					<blockquote>&ldquo;An APRA-regulated institution must maintain at all times a documented BCP [business continuity plan]&rdquo;</blockquote>
+					<blockquote>&ldquo;Where material business activities are outsourced, an APRA-regulated institution
+must satisfy itself as to the adequacy of the outsourced service provider’s BCP&rdquo;</blockquote>
+				</section>
+
+				<section>
+					<h2>Summary</h2>
+					<p></p>
+				</section>
+
+				<section>
+					<h2>Myth 2</h2>
+					<p>Privacy</p>
+					<blockquote>&ldquo;The Australian Privacy Principles mean that personal information cannot touch servers outside Australia without first obtaining the person's consent.&rdquo;</blockquote>
+					<aside class="notes">
+						<p>APP are part of the Privacy Act, and apply to medium and large enterprises as well as government agencies.</p>
+						<p>Privacy is complicated!</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Source of myth 2 [1]</h2>
+					<p>Australian Privacy Principle 8:<br>Cross-border disclosure of personal information</p>
+					<blockquote>&ldquo;8.1: Before an APP entity discloses personal information about an individual to a person (the overseas recipient), [...] the entity must take such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the Australian Privacy Principles&rdquo;</blockquote>
+				</section>
+
+				<section>
+					<h2>Source of myth 2 [2]</h2>
+					<p>continuing...</p>
+					<blockquote>&ldquo;8.2: Subclause 8.1 does not apply [...] if [...] the entity expressly informs the individual that if he or she consents to the disclosure of the information, subclause 8.1 will not apply to the disclosure; [and] the individual consents to the disclosure&rdquo;</blockquote>
+				</section>
+
+				<section>
+					<h2>&quot;Use&quot; or &quot;disclose&quot;?</h2>
+					<p>APP 6 guidelines: Use or disclosure of personal information</p>
+					<blockquote>&ldquo;An APP entity 'discloses' personal information where it makes it accessible to others outside the entity and releases the subsequent handling of the information from its effective control.&rdquo;</blockquote>
+					<blockquote>&ldquo;An APP entity 'uses' information where it handles [...] the information, within the entity's effective control. &rdquo;</blockquote>
+					<aside class="notes">
+						<p>There's a big difference!</p>
+						<p>On use: <i>within the entity's effective control</i></p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Myth 3:</h2>
+					<p>Multi-tenancy and virtualisation</p>
+					<blockquote>&ldquo;The Australian Signals Directorate does not allow government agencies and departments toshared multi-tenant hosting due to the risk of breach from a compromised tenant.&rdquo;</blockquote>
+					<aside class="notes">
+						You'll know about this if you work in government.
+					</aside>
+				</section>
+
+				<section>
+					<h2></h2>
+					<p></p>
+					<p></p>
+					<p></p>
+				</section>
+
+				<section>
+					<h2></h2>
+					<p></p>
+					<p></p>
+					<p></p>
+				</section>
+
+				<section>
+					<h2></h2>
+					<p></p>
+					<p></p>
+					<p></p>
+				</section>
+
+				<section>
+					<h2>Read the policy!</h2>
+					<p></p>
+					<p></p>
+					<p></p>
+				</section>
+
+				<section>
+					<h2>APRA References</h2>
+					<p><a href="http://apra.gov.au/AboutAPRA/Documents/Information-Paper-Outsourcing-Involving-Shared-Computing-Services.pdf"></a>APRA Information Paper: Outsourcing involving shared computing services (including cloud) (6 July 2015) [PDF]</p>
+					<p><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-231-Outsourcing-(July-2017).pdf">APRA Prudential Standard CPS 231: Outsourcing (July 2017) [PDF]</a></p>
+					<p><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-232-Business-Continuity-Management-(July-2017).pdf">APRA Prudential Standard CPS 232: Business Continuity Management (July 2017) [PDF]</a></p>
+					<p><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Practice-Guide-CPG-234-Management-of-Security-Risk-May-2013.pdf">APRA Prudential Practice Guide CPG 234: Management of Security Risk in
+Information and Information Technology (May 2013) [PDF]</a></p>
+					<p><a href="http://apra.gov.au/CrossIndustry/pages/prudential-standards.aspx">APRA Cross Industry Prudential Standards</a></p>
+					<p><a href="http://apra.gov.au/CrossIndustry/Pages/Prudential-Practice-Guides.aspx">APRA Cross Industry Prudential Practice Guides</a></p>
+					<!-- <p><a href="http://www.apra.gov.au/Super/PrudentialFramework/Documents/Prudential-Practice-Guide-SPG-231-Outsourcing-July-2013.pdf">APRA Prudential Practice Guide SPG 231: Outsourcing (July 2013) [PDF]</a></p> -->
+				</section>
+
+				<section>
+					<h2>APP References</h2>
+					<p><a href="https://www.oaic.gov.au/resources/individuals/privacy-fact-sheets/general/privacy-fact-sheet-17-australian-privacy-principles.pdf">Australian Privacy Principles (January 2014) [PDF]</a></p>
+					<p><a href="https://www.oaic.gov.au/resources/agencies-and-organisations/app-guidelines/chapter-6-app-guidelines-v1.pdf">APP guidelines: Chapter 6: APP 6 — Use or disclosure of personal information (Version 1.0, February 2014) [PDF]</a></p>
+					<p><a href="https://www.oaic.gov.au/resources/agencies-and-organisations/app-guidelines/chapter-8-app-guidelines-v1.1.pdf">APP guidelines: Chapter 8: APP 8 — Cross-border disclosure of personal information (Version 1.1, March 2015) [PDF]</a></p>
+					<p><a href="https://www.oaic.gov.au/resources/agencies-and-organisations/app-guidelines/chapter-b-app-guidelines-v1.2.pdf">APP guidelines: Chapter B: Key concepts (Version 1.2, March 2015) [PDF]</a></p>
+				</section>
+
+				<section>
+					<h2>Thank you!</h2>
+					<p>Halvard Skogsrud</p>
+					<p><a href="https://twitter.com/halvards">@halvards</a></p>
+				</section>
+
 			</div>
 		</div>
 
