@@ -39,8 +39,8 @@
 				<section>
 					<h2>Cloud Compliance Myths</h2>
 					<p>Halvard Skogsrud</p>
-					<p><a href="https://twitter.com/halvards">@halvards</a></p>
 					<small>
+    					<p><a href="https://twitter.com/halvards">@halvards</a></p>
 						<p>YOW! 2016 CTO Summit Sydney</p>
 						<p>Wednesday 7 December 2016</p>
 					</small>
@@ -98,9 +98,9 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 				</section>
 
 				<section>
-					<h2>Source of myth 2 [1]</h2>
+					<h2>Source of myth 2</h2>
 					<p>Australian Privacy Principle 8:<br>Cross-border disclosure of personal information</p>
-					<blockquote>&ldquo;8.1: Before an APP entity discloses personal information about an individual to a person (the overseas recipient), [...] the entity must take such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the Australian Privacy Principles&rdquo;</blockquote>
+					<blockquote>&ldquo;8.1: Before an APP entity discloses personal information [...] the entity must take such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the Australian Privacy Principles&rdquo;</blockquote>
 				</section>
 
 				<section>
@@ -113,28 +113,48 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<h2>&quot;Use&quot; or &quot;disclose&quot;?</h2>
 					<p>APP 6 guidelines: Use or disclosure of personal information</p>
 					<blockquote>&ldquo;An APP entity 'discloses' personal information where it makes it accessible to others outside the entity and releases the subsequent handling of the information from its effective control.&rdquo;</blockquote>
-					<blockquote>&ldquo;An APP entity 'uses' information where it handles [...] the information, within the entity's effective control. &rdquo;</blockquote>
+					<blockquote>&ldquo;An APP entity 'uses' information where it handles [...] the information, within the entity's effective control.&rdquo;</blockquote>
+                        <!--<blockquote>&ldquo;[...] the distinction is relevant to [...] the disclosure of personal information to an overseas recipient.&rdquo;</blockquote>-->
 					<aside class="notes">
-						<p>There's a big difference!</p>
-						<p>On use: <i>within the entity's effective control</i></p>
+						On use: <i>within the entity's effective control</i><br>
+						And &quot;the distinction is relevant to [...] the disclosure of personal information to an overseas recipient&quot;<br>
+                        'Unauthorised access' is also different.
 					</aside>
 				</section>
 
 				<section>
-					<h2>Myth 3:</h2>
+					<h2>Myth 3</h2>
 					<p>Multi-tenancy and virtualisation</p>
-					<blockquote>&ldquo;The Australian Signals Directorate does not allow government agencies and departments toshared multi-tenant hosting due to the risk of breach from a compromised tenant.&rdquo;</blockquote>
+					<blockquote>&ldquo;The Australian Signals Directorate (ASD) does not allow government agencies and departments to use shared multi-tenant hosting due to the risk of breach from a compromised tenant.&rdquo;</blockquote>
 					<aside class="notes">
-						You'll know about this if you work in government.
+						ASD is part of the Department of Defence. You'll know about this if you work in government.
 					</aside>
 				</section>
 
 				<section>
-					<h2></h2>
-					<p></p>
-					<p></p>
-					<p></p>
+					<h2>Source of myth 3</h2>
+					<p>ASD Cloud Computing Security Considerations (Sept 2012)</p>
+					<blockquote>&ldquo;What assurance do I have that the virtualisation [...] mechanisms guarantee adequate logical and network segregation between multiple tenants [...]?&rdquo;</blockquote>
+					<blockquote>&ldquo;For Infrastructure as a Service, the virtualisation software [...] was typically not originally designed to provide segregation for security purposes.&rdquo;</blockquote>
+					<aside class="notes">
+						ASD considers this document superceeded by their newer advice. It's still on their website because &quot;some readers might find its conversational format useful to start a discussion&quot;
+					</aside>
 				</section>
+
+				<section>
+                    <h2>Virtualisation</h2>
+                    <p>From ASD's Cloud Computing Security for Tenants:</p>
+					<blockquote>&ldquo;Use multi-tenancy mechanisms provided by the CSP [cloud service provider] e.g. to separate the tenant's web application and network traffic from other tenants&rdquo;</blockquote>
+                    <aside class="notes">
+						Followed by links showing fixed security vulnerabilities in VMware, Hyper-V, XEN, KVM, and known vulnerabilities in Docker.
+					</aside>
+                </section>
+
+				<section>
+                    <h2>Advice</h2>
+                    <p>From ASD's Cloud Computing Security for Tenants:</p>
+					<blockquote>&ldquo;Organisations need to perform a risk assessment and implement associated mitigations before using cloud services. [...] Organisations need to compare these risks against an objective risk assessment of using inhouse computer systems which might: be poorly secured; have inadequate availability; or, be unable to meet modern business requirements.&rdquo;</blockquote>
+                </section>
 
 				<section>
 					<h2></h2>
@@ -144,43 +164,50 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 				</section>
 
 				<section>
-					<h2></h2>
+					<h2>Read the policy yourself!</h2>
 					<p></p>
 					<p></p>
 					<p></p>
-				</section>
-
-				<section>
-					<h2>Read the policy!</h2>
-					<p></p>
-					<p></p>
-					<p></p>
-				</section>
-
-				<section>
-					<h2>APRA References</h2>
-					<p><a href="http://apra.gov.au/AboutAPRA/Documents/Information-Paper-Outsourcing-Involving-Shared-Computing-Services.pdf"></a>APRA Information Paper: Outsourcing involving shared computing services (including cloud) (6 July 2015) [PDF]</p>
-					<p><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-231-Outsourcing-(July-2017).pdf">APRA Prudential Standard CPS 231: Outsourcing (July 2017) [PDF]</a></p>
-					<p><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-232-Business-Continuity-Management-(July-2017).pdf">APRA Prudential Standard CPS 232: Business Continuity Management (July 2017) [PDF]</a></p>
-					<p><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Practice-Guide-CPG-234-Management-of-Security-Risk-May-2013.pdf">APRA Prudential Practice Guide CPG 234: Management of Security Risk in
-Information and Information Technology (May 2013) [PDF]</a></p>
-					<p><a href="http://apra.gov.au/CrossIndustry/pages/prudential-standards.aspx">APRA Cross Industry Prudential Standards</a></p>
-					<p><a href="http://apra.gov.au/CrossIndustry/Pages/Prudential-Practice-Guides.aspx">APRA Cross Industry Prudential Practice Guides</a></p>
-					<!-- <p><a href="http://www.apra.gov.au/Super/PrudentialFramework/Documents/Prudential-Practice-Guide-SPG-231-Outsourcing-July-2013.pdf">APRA Prudential Practice Guide SPG 231: Outsourcing (July 2013) [PDF]</a></p> -->
-				</section>
-
-				<section>
-					<h2>APP References</h2>
-					<p><a href="https://www.oaic.gov.au/resources/individuals/privacy-fact-sheets/general/privacy-fact-sheet-17-australian-privacy-principles.pdf">Australian Privacy Principles (January 2014) [PDF]</a></p>
-					<p><a href="https://www.oaic.gov.au/resources/agencies-and-organisations/app-guidelines/chapter-6-app-guidelines-v1.pdf">APP guidelines: Chapter 6: APP 6 — Use or disclosure of personal information (Version 1.0, February 2014) [PDF]</a></p>
-					<p><a href="https://www.oaic.gov.au/resources/agencies-and-organisations/app-guidelines/chapter-8-app-guidelines-v1.1.pdf">APP guidelines: Chapter 8: APP 8 — Cross-border disclosure of personal information (Version 1.1, March 2015) [PDF]</a></p>
-					<p><a href="https://www.oaic.gov.au/resources/agencies-and-organisations/app-guidelines/chapter-b-app-guidelines-v1.2.pdf">APP guidelines: Chapter B: Key concepts (Version 1.2, March 2015) [PDF]</a></p>
 				</section>
 
 				<section>
 					<h2>Thank you!</h2>
 					<p>Halvard Skogsrud</p>
 					<p><a href="https://twitter.com/halvards">@halvards</a></p>
+				</section>
+
+				<section>
+					<h2>APRA References</h2>
+                    <ul>
+                        <li><a href="http://apra.gov.au/AboutAPRA/Documents/Information-Paper-Outsourcing-Involving-Shared-Computing-Services.pdf">APRA Information Paper: Outsourcing involving shared computing services (including cloud) (6 July 2015) [PDF]</a></li>
+                        <li><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-231-Outsourcing-(July-2017).pdf">APRA Prudential Standard CPS 231: Outsourcing (July 2017) [PDF]</a></li>
+                        <li><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-232-Business-Continuity-Management-(July-2017).pdf">APRA Prudential Standard CPS 232: Business Continuity Management (July 2017) [PDF]</a></li>
+                        <li><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Practice-Guide-CPG-234-Management-of-Security-Risk-May-2013.pdf">APRA Prudential Practice Guide CPG 234: Management of Security Risk in Information and Information Technology (May 2013) [PDF]</a></li>
+                        <li><a href="http://apra.gov.au/CrossIndustry/pages/prudential-standards.aspx">APRA Cross Industry Prudential Standards</a></li>
+                        <li><a href="http://apra.gov.au/CrossIndustry/Pages/Prudential-Practice-Guides.aspx">APRA Cross Industry Prudential Practice Guides</a></li>
+                        <!-- <li><a href="http://www.apra.gov.au/Super/PrudentialFramework/Documents/Prudential-Practice-Guide-SPG-231-Outsourcing-July-2013.pdf">APRA Prudential Practice Guide SPG 231: Outsourcing (July 2013) [PDF]</a></li> -->
+                    </ul>
+				</section>
+
+				<section>
+					<h2>APP References</h2>
+                    <ul>
+                        <li><a href="https://www.oaic.gov.au/individuals/privacy-fact-sheets/general/privacy-fact-sheet-17-australian-privacy-principles">Australian Privacy Principles (January 2014) [PDF]</a></li>
+                        <li><a href="https://www.oaic.gov.au/agencies-and-organisations/app-guidelines/chapter-b-key-concepts">APP guidelines: Chapter B: Key concepts (Version 1.2, March 2015)</a></li>
+                        <li><a href="https://www.oaic.gov.au/agencies-and-organisations/app-guidelines/chapter-6-app-6-use-or-disclosure-of-personal-information">APP guidelines: APP 6 — Use or disclosure of personal information (Version 1.0, February 2014)</a></li>
+                        <li><a href="https://www.oaic.gov.au/agencies-and-organisations/app-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information">APP guidelines: APP 8 — Cross-border disclosure of personal information (Version 1.1, March 2015)</a></li>
+                        <li><a href="https://www.oaic.gov.au/agencies-and-organisations/app-guidelines/chapter-11-app-11-security-of-personal-information">APP guidelines: APP 11 — Security of personal information (Version 1.1, March 2015)</a></li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2>ASD References</h2>
+                    <ul>
+					<li><a href="http://www.asd.gov.au/infosec/ism/index.htm">Australian Government Information Security Manual (30 May 2016)</a></li>
+					<li><a href="http://www.asd.gov.au/publications/protect/cloud-security-tenants.htm">ASD Cloud Computing Security for Tenants (April 2015)</a></li>
+					<li><a href="http://www.asd.gov.au/infosec/irap/certified_clouds.htm">ASD Certified Cloud Services (June 2016)</a></li>
+					<li><a href="http://www.asd.gov.au/publications/protect/cloud_computing_security_considerations.htm">ASD Cloud Computing Security Considerations (September 2012)</a></li>
+                    </ul>
 				</section>
 
 			</div>
