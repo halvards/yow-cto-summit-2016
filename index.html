@@ -54,6 +54,17 @@
 				</section>
 
 				<section>
+					<img src="images/boq-takes-10m-hit-on-salesforce-crm.png" alt="BoQ takes $10m hit on Salesforce CRM. Regulatory hurdles end cloud pilot. Bank of Queensland has written off $10 million from a three-year trial of Salesforce technology for its customer relationship management (CRM) platform. The bank today advised that \"operational and regulatory requirements\" related to the cloud-based system had not been met, resulting in the $10 million impairment." style="border: 0; margin-bottom: 0;">
+					<p>February 2015</p>
+					<p><small><a href="http://www.itnews.com.au/news/boq-takes-10m-hit-on-salesforce-crm-401001">http://www.itnews.com.au/news/boq-takes-10m-hit-on-salesforce-crm-401001</a></small></p>
+					<aside class="notes">
+						Started trials in 2011.<br>
+						First publicly revealed in <a href="https://delimiter.com.au/2012/10/18/boq-deploys-salesforce-com-crm/">Oct 2012</a>.<br>
+						Planned completion by end of 2013.<br>
+					</aside>
+				</section>
+
+				<section>
 					<h2>Myth 1</h2>
 					<p>Business continuity</p>
 					<blockquote>&ldquo;APRA's prudential standards says we must be ready to redeploy applications in-house at any time in case of a significant disruption at the cloud provider.&rdquo;</blockquote>
@@ -93,8 +104,36 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 				</section>
 
 				<section>
-					<h2>Summary</h2>
-					<p></p>
+					<img src="images/coat-of-arms-apra-logo.png" alt="Australian Government Coat of Arms and APRA logo" style="border: 0; box-shadow: 0 0 0; width: 60%;">
+					<img src="images/apra-cloud-information-paper.png" ="Information Paper: Outsourcing involving shared computing services (including cloud)" style="border: 0; box-shadow: 0 0 0; width: 90%;">
+					<aside class="notes">
+						Public cloud considered outsourcing.<br>
+						Entities must consult with APRA prior to entering into outsourcing arrangements where offshoring is involved.<br>
+						APRA &quot;questions the appropriateness of transitioning systems of record to a public cloud environment.&quot;<br>
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/cps231.png" alt="APRA Prudential Standard CPS 231: Outsourcing" style="border: 0; box-shadow: 0 0 0; width: 80%;">
+					<aside class="notes">
+						&quot;Offshoring includes arrangements where the service provider is incorporated in Australia, but the physical location of the outsourced activity is outside Australia.&quot;<br>
+						&quot;Offshoring does not include arrangements where the physical location of an outsourced activity is within Australia but the service provider is not incorporated in Australia.&quot;<br>
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/cps232.png" alt="APRA Prudential Standard CPS 232: Business Continuity Management" style="border: 0; box-shadow: 0 0 0; width: 80%;">
+					<aside class="notes">
+						&quot;An APRA-regulated institution must maintain at all times a documented BCP [business continuity plan]&rdquo;<br>
+						&quot;Where material business activities are outsourced, an APRA-regulated institution
+	must satisfy itself as to the adequacy of the outsourced service provider’s BCP&quot;<br>
+					</aside>
+				</section>
+
+				<section>
+					<h2>The Key</h2>
+					<p>From 2010 letter on outsourcing and offshoring - Specific considerations when using cloud computing services:</p>
+					<blockquote>&ldquo;In APRA's view, both materiality and risk assessments necessitate a detailed understanding of the [...] business processes [..], the technology architecture and the sensitive information [...] impacted by the outsourcing arrangement. APRA has observed that, <b>to date, assessments of cloud computing proposals typically lack sufficient consideration of these factors</b>.&rdquo;</blockquote>
 				</section>
 
 				<section>
@@ -102,8 +141,17 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<p>Privacy</p>
 					<blockquote>&ldquo;The Australian Privacy Principles mean that personal information cannot touch servers outside Australia without first obtaining the person's consent.&rdquo;</blockquote>
 					<aside class="notes">
-						<p>APP are part of the Privacy Act, and apply to medium and large enterprises as well as government agencies.</p>
-						<p>Privacy is complicated!</p>
+						Privacy is complicated!<br>
+						Amends Privacy Act 1988. Replaced the National PP and Information PP in March 2014.<br>
+						Applies to medium and large enterprises as well as government agencies.<br>
+					</aside>
+				</section>
+
+				<section>
+					<h1>APP</h1>
+					<h2>Australian Privacy Principles<br></h2>
+					<aside class="notes">
+						Outline how Australian Government agencies, private sector and not-for-profit organisations with an annual turnover of more than $3M, all private health service providers and some small businesses ('APP entities') must manage personal information.
 					</aside>
 				</section>
 
@@ -124,7 +172,7 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<p>APP 6 guidelines: Use or disclosure of personal information</p>
 					<blockquote>&ldquo;An APP entity 'discloses' personal information where it makes it accessible to others outside the entity and releases the subsequent handling of the information from its effective control.&rdquo;</blockquote>
 					<blockquote>&ldquo;An APP entity 'uses' information where it handles [...] the information, within the entity's effective control.&rdquo;</blockquote>
-                        <!--<blockquote>&ldquo;[...] the distinction is relevant to [...] the disclosure of personal information to an overseas recipient.&rdquo;</blockquote>-->
+          <!--<blockquote>&ldquo;[...] the distinction is relevant to [...] the disclosure of personal information to an overseas recipient.&rdquo;</blockquote>-->
 					<aside class="notes">
 						On use: <i>within the entity's effective control</i><br>
 						And &quot;the distinction is relevant to [...] the disclosure of personal information to an overseas recipient&quot;<br>
@@ -152,19 +200,19 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 				</section>
 
 				<section>
-                    <h2>Virtualisation</h2>
-                    <p>From ASD's Cloud Computing Security for Tenants:</p>
+          <h2>Virtualisation</h2>
+          <p>From ASD's Cloud Computing Security for Tenants:</p>
 					<blockquote>&ldquo;Use multi-tenancy mechanisms provided by the CSP [cloud service provider] e.g. to separate the tenant's web application and network traffic from other tenants&rdquo;</blockquote>
-                    <aside class="notes">
+          <aside class="notes">
 						Followed by links showing fixed security vulnerabilities in VMware, Hyper-V, XEN, KVM, and known vulnerabilities in Docker.
 					</aside>
-                </section>
+        </section>
 
 				<section>
-                    <h2>Advice</h2>
-                    <p>From ASD's Cloud Computing Security for Tenants:</p>
-					<blockquote>&ldquo;Organisations need to perform a risk assessment and implement associated mitigations before using cloud services. [...] Organisations need to compare these risks against an objective risk assessment of using inhouse computer systems which might: be poorly secured; have inadequate availability; or, be unable to meet modern business requirements.&rdquo;</blockquote>
-                </section>
+          <h2>Interesting Quote</h2>
+          <p>From ASD's Cloud Computing Security for Tenants:</p>
+					<blockquote>&ldquo;Organisations need to perform a risk assessment and implement associated mitigations before using cloud services. [...] Organisations need to compare these risks against an objective risk assessment of using <b>inhouse computer systems which might: be poorly secured; have inadequate availability; or, be unable to meet modern business requirements</b>.&rdquo;</blockquote>
+        </section>
 
 				<section>
 					<h2></h2>
