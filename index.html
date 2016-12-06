@@ -40,31 +40,31 @@
 					<h2>Cloud Compliance Myths</h2>
 					<p>Halvard Skogsrud</p>
 					<small>
-    					<p><a href="https://twitter.com/halvards">@halvards</a></p>
+  					<p><a href="https://twitter.com/halvards">@halvards</a></p>
 						<p>YOW! 2016 CTO Summit Sydney</p>
 						<p>Wednesday 7 December 2016</p>
 					</small>
 				</section>
 
 				<section>
-					<!-- <h2>Introduction</h2> -->
 					<img src="images/comic_close_your_eyes.png" alt="I've finished studying other companies' cloud migration strategies, 'close your eyes and hope for the best' seems to be the most popular." style="border: 0; margin: 0; width: 72%;">
 					<aside class="notes">
 						Help teams understand why they may or may not want to make use of public cloud for their applications.<br>
 						I'm a developer, not a regulatory &amp; compliance expert.<br>
-						Have deployed and operated production application in regulated environments.<br>
+						Have deployed and operated production application using public cloud in regulated environments, both private and public sector.<br>
 					</aside>
 				</section>
 
-				<!-- <section>
+				<section>
 					<h2>Regulation</h2>
 					<p>APRA: Australian Prudential Regulation Authority</p>
 					<p>APP: Australian Privacy Principles</p>
 					<p>ASD: Australian Signals Directorate</p>
 					<aside class="notes">
-						There are more, these are the ones I'll focus on in this talk.
+            I'll present misconceptions and myths related to these regulations, examine what I think the source is, and present evidence to dispel the misconception.<br><br>
+            This isn't about being dismissive of security and privacy, on the contrary, it's about better understanding our obligations.<br>
 					</aside>
-				</section> -->
+				</section>
 
 				<section>
 					<img src="images/boq-takes-10m-hit-on-salesforce-crm.png" alt="BoQ takes $10m hit on Salesforce CRM. Regulatory hurdles end cloud pilot. Bank of Queensland has written off $10 million from a three-year trial of Salesforce technology for its customer relationship management (CRM) platform. The bank today advised that \"operational and regulatory requirements\" related to the cloud-based system had not been met, resulting in the $10 million impairment." style="border: 0; margin-bottom: 0;">
@@ -90,49 +90,23 @@
 					</aside>
 				</section>
 
-				<section>
-					<h2>Myth</h2>
-					<p>Business continuity</p>
-					<blockquote>&ldquo;APRA's prudential standards says we must be ready to redeploy applications in-house at any time in case of a significant disruption at the cloud provider.&rdquo;</blockquote>
-					<aside class="notes">
-						Implication: We must have full redundancy on internal hardware, which will be too expensive.
-					</aside>
-				</section>
-
-				<section>
+        <section>
 					<h2>Myth</h2>
 					<p>Offshoring</p>
-					<blockquote>&ldquo;Using a cloud provider that is incorporated in another country is considered offshoring by APRA regardless of where the.&rdquo;</blockquote>
+					<blockquote>&ldquo;Using a cloud provider that is incorporated in another country is considered offshoring by APRA regardless of where the data centre is located.&rdquo;</blockquote>
 					<aside class="notes">
-						Implication: We must have full redundancy on internal hardware, which will be too expensive.
+						This would rule out most public cloud providers.<br><br>
+            The US Patriot Act often gets a mention.<br>
 					</aside>
 				</section>
 
-				<section>
+        <section>
 					<h2>Source of myth</h2>
-					<p>APRA Prudential Standard CPS 231: Outsourcing</p>
-					<blockquote>&ldquo;An APRA-regulated institution must be able to demonstrate to APRA that [...] it has taken into account [...] contingency issues in accordance with <a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-232-Business-Continuity-Management-(July-2017).pdf">Prudential Standard CPS 232 Business Continuity Management</a> should the outsourced activity need to be brought in-house&rdquo;</blockquote>
+					<p></p>
+					<blockquote>&ldquo;&rdquo;</blockquote>
 				</section>
 
-				<section>
-					<h2>Evidence against myth [1]</h2>
-					<p>APRA Information Paper: Outsourcing involving shared computing services (including cloud)</p>
-					<blockquote>&ldquo;Additionally, under CPS 231 and SPS 231, APRA-regulated entities must develop contingency plans that allow for the shared computing service to be <b>transitioned to an alternative service provider (or brought in-house), if required</b>.&rdquo;</blockquote>
-          <aside class="notes">
-						Using an alternative service provider is an option.<br><br>
-						'If required' - is the application critical to business continuity?<br>
-					</aside>
-				</section>
-
-				<section>
-					<h2>Evidence against myth [2]</h2>
-					<p>No mention of &quot;in-house&quot; in CPS 232</p>
-					<blockquote>&ldquo;An APRA-regulated institution must maintain at all times a documented BCP [business continuity plan]&rdquo;</blockquote>
-					<blockquote>&ldquo;Where material business activities are outsourced, an APRA-regulated institution
-must satisfy itself as to the adequacy of the outsourced service provider’s BCP&rdquo;</blockquote>
-				</section>
-
-				<section>
+        <section>
 					<img src="images/coat-of-arms-apra-logo.png" alt="Australian Government Coat of Arms and APRA logo" style="border: 0; box-shadow: 0 0 0; width: 60%;">
 					<img src="images/apra-cloud-information-paper.png" ="Information Paper: Outsourcing involving shared computing services (including cloud)" style="border: 0; box-shadow: 0 0 0; width: 90%;">
 					<aside class="notes">
@@ -151,12 +125,43 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 				</section>
 
 				<section>
+					<h2>Myth</h2>
+					<p>Business continuity</p>
+					<blockquote>&ldquo;APRA's prudential standards says we must be ready to redeploy applications in-house at any time in case of a significant disruption at the cloud provider.&rdquo;</blockquote>
+					<aside class="notes">
+						Implication: We must have full redundancy on internal hardware, which will be too expensive.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Source of myth</h2>
+					<p>APRA Prudential Standard CPS 231: Outsourcing</p>
+					<blockquote>&ldquo;An APRA-regulated institution must be able to demonstrate to APRA that [...] it has taken into account [...] contingency issues in accordance with <a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Standard-CPS-232-Business-Continuity-Management-(July-2017).pdf">Prudential Standard CPS 232 Business Continuity Management</a> should the outsourced activity need to be brought in-house&rdquo;</blockquote>
+				</section>
+
+        <section>
 					<img src="images/cps232.png" alt="APRA Prudential Standard CPS 232: Business Continuity Management" style="border: 0; box-shadow: 0 0 0; width: 80%;">
 					<aside class="notes">
 						&quot;An APRA-regulated institution must maintain at all times a documented BCP [business continuity plan]&rdquo;<br>
-						&quot;Where material business activities are outsourced, an APRA-regulated institution
-	must satisfy itself as to the adequacy of the outsourced service provider’s BCP&quot;<br>
+						&quot;Where material business activities are outsourced, an APRA-regulated institution must satisfy itself as to the adequacy of the outsourced service provider’s BCP&quot;<br>
 					</aside>
+				</section>
+
+				<section>
+					<h2>Evidence against myth [1]</h2>
+					<p>APRA Information Paper: Outsourcing involving shared computing services (including cloud)</p>
+					<blockquote style="width: 80%;">&ldquo;[...] under CPS 231 and SPS 231, APRA-regulated entities must develop contingency plans that allow for the shared computing service to be <b>transitioned to an alternative service provider (or brought in-house), if required</b>.&rdquo;</blockquote>
+          <aside class="notes">
+						Using an alternative service provider is an option.<br><br>
+						'If required' - is the application critical to business continuity?<br>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Evidence against myth [2]</h2>
+					<p>No mention of &quot;in-house&quot; in CPS 232</p>
+					<blockquote style="width: 76%;">&ldquo;An APRA-regulated institution must maintain at all times a documented BCP [business continuity plan]&rdquo;</blockquote>
+					<blockquote style="width: 76%;">&ldquo;Where material business activities are outsourced, an APRA-regulated institution must satisfy itself as to the adequacy of the outsourced service provider's BCP&rdquo;</blockquote>
 				</section>
 
 				<section>
@@ -164,8 +169,9 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<p>From 2010 letter on 'Outsourcing and offshoring - Specific considerations when using cloud computing services':</p>
 					<blockquote style="width: 81%;">&ldquo;In APRA's view, both materiality and risk assessments necessitate a detailed understanding of the [...] business processes [..], the technology architecture and the sensitive information [...] impacted by the outsourcing arrangement. APRA has observed that, <b>to date, assessments of cloud computing proposals typically lack sufficient consideration of these factors</b>.&rdquo;</blockquote>
 					<aside class="notes">
-						Concern that cost is the only driver.<br>
-						.<br>
+            2015 Information paper: &quot;Observed weaknesses&quot;:<br><br>
+						Proposals driven purely by cost considerations rather than strategy and architectural roadmap.<br><br>
+						Business cases that focus only on benefits and don't provide visibility of risks.<br>
 					</aside>
 				</section>
 
@@ -179,7 +185,6 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 
 				<section>
 					<h2>Myth</h2>
-					<!-- <p>Privacy</p> -->
 					<blockquote>&ldquo;The Australian Privacy Principles mean that personal information cannot touch servers outside Australia without first obtaining the person's consent.&rdquo;</blockquote>
 					<aside class="notes">
 						Privacy is complicated!<br>
@@ -192,9 +197,6 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<h2>Source of myth</h2>
 					<p>APP 8: Cross-border disclosure of personal information</p>
 					<blockquote style="width: 80%;">&ldquo;8.1: Before an APP entity discloses personal information [...] the entity must take such steps [...] to ensure that the overseas recipient does not breach the Australian Privacy Principles&rdquo;</blockquote>
-				<!-- </section>
-				<section>
-					<h2>Consent to disclose</h2> -->
 					<blockquote style="width: 80%;" class="fragment">&ldquo;8.2: Subclause 8.1 does not apply [...] if [...] the entity expressly informs the individual [...] [and] the individual consents to the disclosure&rdquo;</blockquote>
           <aside class="notes">
 						So disclosure to an overseas recipient requires informing the individual and getting consent.<br>
@@ -231,7 +233,7 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<p>Multi-tenancy and virtualisation</p>
 					<blockquote>&ldquo;The Australian Signals Directorate (ASD) does not allow government agencies and departments to use shared multi-tenant hosting due to the risk of breach from a compromised tenant.&rdquo;</blockquote>
 					<aside class="notes">
-						ASD is part of the Department of Defence. You'll know about this if you work in government.
+						ASD is part of the Department of Defence. You'll know about this if you work in government.<br>
 					</aside>
 				</section>
 
@@ -259,16 +261,16 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
         </section>
 
 				<section>
-          <h2>Interesting Quote</h2>
+          <h2>Interesting quote</h2>
           <p>From ASD's Cloud Computing Security for Tenants:</p>
 					<blockquote style="width: 80%;">&ldquo;Organisations need to perform a risk assessment and implement associated mitigations before using cloud services. [...] Organisations need to compare these risks against an objective risk assessment of using <b>inhouse computer systems which might: be poorly secured; have inadequate availability; or, be unable to meet modern business requirements</b>.&rdquo;</blockquote>
           <aside class="notes">
-						If you're just getting started with considering public cloud risks and mitigations, the guidance from ASD is an excellent starting point.<br>
+            Are your existing practices up to scratch?<br><br>
+            If you're just getting started with considering public cloud risks and mitigations, the guidance from ASD is an excellent starting point.<br>
 					</aside>
         </section>
 
 				<section>
-          <!-- <h2>Bottom Line</h2> -->
 					<h2>Read the policies yourself!</h2>
 					<p>Most of what you hear is interpretations of policies.</p>
           <aside class="notes">
@@ -285,7 +287,7 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
 					<p><a href="https://twitter.com/halvards">@halvards</a></p>
           <p><a href="https://halvards.github.io/yow-cto-summit-2016/">https://halvards.github.io/yow-cto-summit-2016/</a></p>
           <aside class="notes">
-						There are lots of links in the slide deck.<br>
+						There are lots of links to references in the slide deck.<br>
 					</aside>
 				</section>
 
@@ -298,7 +300,6 @@ must satisfy itself as to the adequacy of the outsourced service provider’s BC
               <li><a href="http://apra.gov.au/CrossIndustry/Documents/Prudential-Practice-Guide-CPG-234-Management-of-Security-Risk-May-2013.pdf">APRA Prudential Practice Guide CPG 234: Management of Security Risk in Information and Information Technology (May 2013) [PDF]</a></li>
               <li><a href="http://apra.gov.au/CrossIndustry/pages/prudential-standards.aspx">APRA Cross Industry Prudential Standards</a></li>
               <li><a href="http://apra.gov.au/CrossIndustry/Pages/Prudential-Practice-Guides.aspx">APRA Cross Industry Prudential Practice Guides</a></li>
-              <!-- <li><a href="http://www.apra.gov.au/Super/PrudentialFramework/Documents/Prudential-Practice-Guide-SPG-231-Outsourcing-July-2013.pdf">APRA Prudential Practice Guide SPG 231: Outsourcing (July 2013) [PDF]</a></li> -->
             </ul>
 				</section>
 
