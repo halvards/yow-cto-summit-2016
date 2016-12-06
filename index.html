@@ -54,7 +54,7 @@
 				<section>
 					<img src="images/comic_close_your_eyes.png" alt="I've finished studying other companies' cloud migration strategies, 'close your eyes and hope for the best' seems to be the most popular." style="border: 0; margin: 0; width: 72%;">
 					<aside class="notes">
-						Help teams understand why they may or may not want to make use of public cloud for their applications.<br>
+						Help teams understand how to make best use of public cloud for their applications.<br>
 						I'm a developer, not a regulatory &amp; compliance expert.<br>
 						Have deployed and operated production application using public cloud in regulated environments, both private and public sector.<br>
 					</aside>
@@ -110,10 +110,8 @@
 					<p>Offshoring and data centres</p>
 					<blockquote style="width: 71%;">&ldquo;Using a cloud provider that is incorporated in another country is considered offshoring by APRA regardless of where the data centre is located.&rdquo;</blockquote>
 					<aside class="notes">
-						This would cover most public cloud providers.<br>
-            APRA has strict reporting standards for offshoring.<br><br>
-            The US Patriot Act often gets a mention, can they access the data?<br>
-            It's true that legal jurisdiction can get complicated, and this should be considered.<br>
+						This would cover most public cloud providers.<br><br>
+            APRA has strict reporting standards for offshoring.<br>
 					</aside>
 				</section>
 
@@ -149,7 +147,7 @@
         <section>
 					<h2>Myth</h2>
 					<p>Business continuity</p>
-					<blockquote>&ldquo;APRA's prudential standards says we must be ready to move applications back in-house at any time in case of a significant disruption at the cloud provider.&rdquo;</blockquote>
+					<blockquote>&ldquo;APRA's prudential standards says we must be ready to move applications back in-house at short notice in case of a significant disruption at the cloud provider.&rdquo;</blockquote>
 					<aside class="notes">
 						Implication: We must have full redundancy on internal hardware, which will be too expensive.<br>
 					</aside>
@@ -278,7 +276,22 @@
 				</section>
 
 				<section>
-          <h2>Virtualisation</h2>
+          <h2>Virtualisation advice</h2>
+          <p>From ASD's Information Security Manual - Controls:</p>
+					<blockquote style="width: 80%; text-align: left;">&ldquo;When using a software-based isolation mechanism to share a physical server's hardware, agencies must ensure that:
+						<ul>
+							<li>the isolation mechanism is from a vendor that uses secure programming practices [...]</li>
+							<li>the configuration of the isolation mechanism is hardened [...]&rdquo;</li>
+							<li>[...]</li>
+						</ul>
+					</blockquote>
+          <aside class="notes">
+						More about hardening, security patches, and integrity and log monitoring.<br>
+					</aside>
+        </section>
+
+				<section>
+          <h2>Virtualisation risk</h2>
           <p>From ASD's Cloud Computing Security for Tenants:</p>
 					<p>Risk: <q>&ldquo;Tenant's data compromised by another malicious/compromised tenant&rdquo;</q></p>
 					<p>Mitigation: <q>&ldquo;Use multi-tenancy mechanisms provided by the CSP [cloud service provider] e.g. to separate the tenant's web application and network traffic from other tenants&rdquo;</q></p>
