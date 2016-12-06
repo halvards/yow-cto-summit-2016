@@ -13,4 +13,6 @@ Usage:
 * Swipe through slides on touch devices
 * Press `B` or `.` to pause the presentation and take the slide off the screen
 
-Slide format from [hakimel/reveal.js](http://lab.hakim.se/reveal-js/)
+The content is distributed under the [Creative Commons Attribution 4.0 license](http://choosealicense.com/licenses/cc-by-4.0/), see [`LICENSE`](LICENSE).
+
+Slide format used from [hakimel/reveal.js](http://lab.hakim.se/reveal-js/) under the [MIT license](http://choosealicense.com/licenses/mit/), see [`reveal.js-LICENSE`](reveal.js-LICENSE).
